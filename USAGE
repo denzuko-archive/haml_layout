@@ -1,0 +1,18 @@
+Description:
+    The app_layout generator creates a basic SASS stylesheet and HAML layout
+    file which will give some structure to a starting Rails app.
+
+    The generator takes in only one argument that of the layout and stylesheet 
+    file name.
+
+    It then checks for haml in the vender/plugins, and creates the supporting
+    files. Besure to taylor these files to your application's needs.
+
+Examples:
+    ./script/generate haml_layout application
+
+        This will create three files and one directory:
+            Helper:     app/helper/application_helper.rb
+            Layout:     app/views/layouts/application.html.rb
+            Directory:  public/stylesheets/sass
+            Stylesheet: public/stylesheets/sass/application.css

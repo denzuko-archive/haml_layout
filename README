@@ -1,0 +1,43 @@
+HAML AppLayout Generator
+========================
+
+This is a rails 2.0 generator for creating a simple haml, sass and controller 
+helpers to run with initial setup of a rails app or for creating different 
+layouts within existing applications.
+
+Prerequisite
+============
+
+  * Rails 2.0 or better
+  * haml 0.2 or better
+
+Examples
+========
+
+  rails MY_PROJECT && cd MY_PROJECT
+  haml --rails .
+  rm -fv public/index.html
+
+  ./script/generate haml_layout application
+
+  This will create all the basic application and layout files, plus supporting 
+  files for a new rails application.
+
+  From this you can then edit your config/database.yml and build your schema,
+  and controllers. Then setting your default route in config/routes.rb and
+  launch the server.
+
+Credits
+=======
+
+  Dwight Spencer (dspencer@odesk.com), Generator Author
+    New rewrite with out any original code of the orignal concept created by
+    Ryan Bates. Github project adminstration and Author of this plugin
+    - http://denzuko.wordpress.com/
+
+  Ryan Bates (ryanb@railscasts.com), For giving us the rails 1.2 version that
+    inspired this generator plugin.
+     - http://railscasts.com/episodes/58
+
+  Hampton Catlin (hcatlin@gmail.com), Haml/Sass template engine for rails
+   - http://haml.hamptoncatlin.com/about
